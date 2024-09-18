@@ -1,9 +1,0 @@
-{
-  "generators": {
-    "library-submodule-generator": {
-      "factory": "./src/generators/library-submodule-generator/generator",
-      "schema": "./src/generators/library-submodule-generator/schema.json",
-      "description": "library-submodule-generator generator"
-    }
-  }
-}
