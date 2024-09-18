@@ -11,6 +11,19 @@ permissions:
   contents: read
 
 jobs:
+  check-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Check out main branch in submodules
+        run: |
+          git diff --submodule
+          if [ $? -ne 0 ]; then
+            echo "Submodules are out of sync. Please run 'git submodule update --init --recursive' and commit the changes."
+            exit 1
+          fi
   main:
     runs-on: ubuntu-latest
     steps:
