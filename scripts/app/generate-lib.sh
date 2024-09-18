@@ -41,7 +41,7 @@ git remote add origin "$remoteRepoUrl"
 git remote set-url origin "$remoteRepoUrl"
 
 # Commit and push to the remote repository
-git add . && git commit -m "Initial Commit" && git push -u origin main
+git checkout main && git add . && git commit -m "Initial Commit" && git push -u origin main
 
 # Add the submodule to the main repository
 cd ../../../
