@@ -15,7 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bell-main/product-detail": ["libs/feature/product-detail/src/index.ts"]
+      "@bell-main/library-submodule-setup": [
+        "tools/library-submodule-setup/src/index.ts"
+      ],
+      "@bell-main/pdp": ["libs/feature/pdp/src/index.ts"],
+      "@bell-main/product-detail": ["libs/feature/product-detail/src/index.ts"],
+      "@bell-main/product-listing": [
+        "libs/feature/product-listing/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,3 +1,6 @@
 [submodule "libs/feature/product-detail"]
 	path = libs/feature/product-detail
 	url = https://github.com/eq60477/product-detail.git
+[submodule "libs/feature/product-listing"]
+	path = libs/feature/product-listing
+	url = https://github.com/eq60477/product-listing.git
